@@ -83,7 +83,12 @@ public class CourseService {
         existingCourseEntity.setCertificateAvailable(courseRequestDTO.isCertificateAvailable());
         existingCourseEntity.setDescription(courseRequestDTO.getDescription());
         //save modified value
-        CourseEntity updatedCourseEntity = courseDao.save(existingCourseEntity);
+        CourseEntity updatedCourseEntity;
+        try {
+           updatedCourseEntity = courseDao.save(existingCourseEntity);
+        }catch (Exception e){
+            throw new CourseServiceBusinessException("updation didnt happened!!!");
+        }
         return AppUtils.mapEntityToDTO(updatedCourseEntity);
     }
 

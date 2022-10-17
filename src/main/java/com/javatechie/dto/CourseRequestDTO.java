@@ -28,6 +28,7 @@ public class CourseRequestDTO {
     private String courseType; //Live OR Recodring
     @Min(value = 1500, message = "course price can't be less than 1500")
     @Max(value = 5000, message = "course price can't be more than 5000")
+    @Size(min = 1500 ,max = 5000)
     private double fees;
 
     private boolean isCertificateAvailable;

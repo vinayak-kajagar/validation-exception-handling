@@ -60,7 +60,7 @@ public class CourseController {
 
     //assignment
     @PutMapping("/{courseId}")
-    public ServiceResponse<CourseResponseDTO> updateCourse(@PathVariable int courseId, @RequestBody CourseRequestDTO courseRequestDTO) {
+    public ServiceResponse<CourseResponseDTO> updateCourse(@PathVariable int courseId, @RequestBody @Valid CourseRequestDTO courseRequestDTO) {
         //validate request
         // validateRequestPayload(courseRequestDTO);
         CourseResponseDTO courseResponseDTO = courseService.updateCourse(courseId, courseRequestDTO);

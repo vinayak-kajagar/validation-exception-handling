@@ -13,17 +13,17 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import java.util.ArrayList;
 import java.util.List;
 
-@RestControllerAdvice
+@RestControllerAdvice         //in your application all the exceptions being thrown , will handle in this particular class
 public class ApplicationGlobalExceptionHandler {
 
     //MethodArgumentNotValidException
-    @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ExceptionHandler(MethodArgumentNotValidException.class)//this is the class when you get from the controller / service ,then immidetely deligate that request to below method
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ServiceResponse<?> handleMethodArgumentException(MethodArgumentNotValidException exception) {
         ServiceResponse<?> serviceResponse = new ServiceResponse<>();
         List<ErrorDTO> errorDTOList = new ArrayList<>();
-        exception.getBindingResult().getFieldErrors()
-                .forEach(error -> {
+        exception.getBindingResult().getFieldErrors() //from this exception i will get all the error
+                .forEach(error -> {//im going to store all errors in errorDto list
                     ErrorDTO errorDTO = new ErrorDTO(error.getField()+" : "+error.getDefaultMessage());
                     errorDTOList.add(errorDTO);
                 });
