@@ -1,18 +1,15 @@
-package com.javatechie.service;
+package com.vinayak.service;
 
-import com.javatechie.dao.CourseDao;
-import com.javatechie.dto.CourseRequestDTO;
-import com.javatechie.dto.CourseResponseDTO;
-import com.javatechie.entity.CourseEntity;
-import com.javatechie.exception.CourseServiceBusinessException;
-import com.javatechie.util.AppUtils;
+import com.vinayak.dao.CourseDao;
+import com.vinayak.dto.CourseRequestDTO;
+import com.vinayak.dto.CourseResponseDTO;
+import com.vinayak.entity.CourseEntity;
+import com.vinayak.exception.CourseServiceBusinessException;
+import com.vinayak.util.AppUtils;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import javax.security.auth.kerberos.KerberosTicket;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.UUID;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;

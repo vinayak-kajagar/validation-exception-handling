@@ -1,9 +1,9 @@
-package com.javatechie.controller;
+package com.vinayak.controller;
 
-import com.javatechie.dto.CourseRequestDTO;
-import com.javatechie.dto.CourseResponseDTO;
-import com.javatechie.dto.ServiceResponse;
-import com.javatechie.service.CourseService;
+import com.vinayak.dto.CourseRequestDTO;
+import com.vinayak.dto.CourseResponseDTO;
+import com.vinayak.dto.ServiceResponse;
+import com.vinayak.service.CourseService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

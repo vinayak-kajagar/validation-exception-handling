@@ -1,7 +1,7 @@
-package com.javatechie.dto;
+package com.vinayak.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.javatechie.annotation.CourseTypeValidation;
+import com.vinayak.annotation.CourseTypeValidation;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

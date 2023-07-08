@@ -1,4 +1,4 @@
-package com.javatechie.exception;
+package com.vinayak.exception;
 
 public class CourseServiceBusinessException extends RuntimeException{
 

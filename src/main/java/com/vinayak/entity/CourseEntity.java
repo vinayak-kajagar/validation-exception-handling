@@ -1,6 +1,5 @@
-package com.javatechie.entity;
+package com.vinayak.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

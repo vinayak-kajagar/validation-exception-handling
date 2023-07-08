@@ -1,4 +1,4 @@
-package com.javatechie.annotation;
+package com.vinayak.annotation;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

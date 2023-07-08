@@ -1,8 +1,8 @@
-package com.javatechie.util;
+package com.vinayak.util;
 
-import com.javatechie.dto.CourseRequestDTO;
-import com.javatechie.dto.CourseResponseDTO;
-import com.javatechie.entity.CourseEntity;
+import com.vinayak.dto.CourseRequestDTO;
+import com.vinayak.dto.CourseResponseDTO;
+import com.vinayak.entity.CourseEntity;
 
 public class AppUtils {
 
